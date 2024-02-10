@@ -1,3 +1,16 @@
+button {
+  background-color: #4CAF50; /* Change to your preferred color */
+  color: white; /* Change to your preferred color */
+  padding: 10px 20px; /* Adjust padding as needed */
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px; /* Adjust font size as needed */
+  margin: 4px 2px;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease; /* Add transition for smooth color change */
+}
 
 /*------------------------------------------NAVIGATION BAR------------------------------------*/
 .topnav {
@@ -32,6 +45,10 @@
     font-weight: bold;
     margin:auto;
   }
+  .topnav button:hover {
+    background-color: #45a049; /* Change to your preferred hover color */
+    color: white; /* Change to your preferred hover color */
+}
   
   .logo
   {
@@ -42,6 +59,8 @@
   .topnav a:hover {
     background-color: rgb(40, 139, 55);
     color: rgba(0, 0, 0, 0.808);
+    max-width: 100%; /* Ensure the width does not exceed the parent's width */
+    max-height: 100%; /* Ensure the height does not exceed the parent's height */
   }
   
   /* Add an active class to highlight the current page */
