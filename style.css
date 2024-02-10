@@ -212,6 +212,9 @@ To fix this, you need to adjust your CSS selectors to target the correct element
     justify-content: space-between; /* Add space between the boxes */
     padding: 0 20px; /* Add 20px of padding to the left and right, (the first value is the top and bottom padding, and the second value is the left and right padding).  */
   }
+  .container2 p, ul{
+    color: black;
+  }
   
   .box {
     border: 2px solid #000; /* Box outline */
