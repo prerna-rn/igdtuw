@@ -4,7 +4,7 @@
     z-index: 20;
     display: flex;
     justify-content: center;
-    background-color: white;
+    background-color: rgb(26, 105, 26);
     padding: 2px 140px 3px 70px;
     border-bottom: 1px solid rgb(219, 219, 219);
     top:0%;
@@ -16,12 +16,14 @@
     width: 50px; /* Adjust as needed */
     height: 50px; /* Adjust as needed */
 }
-
+.fa-angle-down {
+  color: white; /* down arrow angle in navbar */
+}
   /* Style the links inside the navigation bar */
   .topnav a{
     float: left;
     display: block;
-    color: rgba(0, 0, 0, 0.808);
+    color: rgba(255, 255, 255, 0.808);
     text-align: center;
     padding: 14px 16px;
     text-decoration:none;
@@ -51,9 +53,10 @@
   .topnav a.active:hover{
       background-color: white;
   }
+  /* CONTACT */
   .topnav .main
   {
-      color:rgb(2, 172, 2);
+      color:rgb(255, 255, 255);
   }
   
   /* Hide the link that should open and close the topnav on small screens */
@@ -63,15 +66,19 @@
   
     /*--------------------------------------*/
   /* The dropdown container */
+  /* In your CSS, you're targeting .dropdown:hover .dropdown-content, but you don't have a direct .dropdown class inside these buttons. Instead, you have a div with a class of .dropdown wrapping around the button and the dropdown content.
+To fix this, you need to adjust your CSS selectors to target the correct elements. */
   .dropdown {
-    float: right;
-    overflow: hidden;
+    position: relative;
+    display: inline-block;
+    /* float: right;
+    overflow: hidden; */
   }
   
   /* Dropdown button */
   .dropdown .dropbtn {
     font-size: 14px;
-    color: rgba(0, 0, 0, 0.808);
+    color: rgba(255, 255, 255, 0.808);
     text-align: center;
     padding: 24px 16px;
     border: none;
@@ -85,7 +92,7 @@
   }
   
   /* Add a blue background color to navbar links on hover */
-  .navbar a:hover, .dropdown:hover .dropbtn {
+  .topnav a:hover, .dropdown:hover .dropbtn {
     /* background-color: rgb(108, 233, 233); */
     background-color: rgb(40, 139, 55);
 
@@ -99,17 +106,20 @@
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    top: 100%; /* Position dropdown below the button */
+    left: 0;
   }
   
   /* Links inside the dropdown */
   .dropdown-content a {
-    float: none;
+    /* float: none; */
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
     text-align: left;
     font-weight: lighter;
+    width: 100%; /* Full width on links */
   }
   
   /* Add a grey background color to dropdown links on hover */
@@ -151,66 +161,70 @@
     position: relative; /* To make the navbar positions relative to this container */
     padding: 0;
   }
+
   .container {
     text-align: center;
     margin-top: 80px; /* gives space bw navbar and carousel */
     margin-bottom: 5px;
     font-family:  Arial, Helvetica, sans-serif;
-    font-weight: bold;
-
+    font-weight: 900;
+    color:rgb(26, 105, 26);
+  }
+  
+  .container h1{
+    font-weight: 550;
+  }
+  .container p{
+    font-weight: normal;
+  }
+  li {
+    text-align: justify; /* Make the text justified */
+    font-weight: normal; /* Make the text normal weight */
 }
-  .navbar-default {
-    background-image: none;
-    background-color: transparent; /* Make the menu become transparent */
-    border-radius: 0px;
-    border: 0;
-    box-shadow: none;
-    padding: 10px;
-    position: absolute; /* Make the menu out of the document flow so it can placed anywhere without disturbing other widgets */
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10; /* If you delete this line, your menu link won't be clicked because it is behind the background. Applying this code bring the menu in front of the background */
+  .container2 {
+    text-align: center;
+    margin-top: 20px; /* gives space bw container and carousel */
+    margin-bottom: 5px;
+    /* margin-left: 4px; */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    color: rgb(26, 105, 26);
+    display: flex; /* Use flexbox to display boxes side by side */
+    justify-content: space-between; /* Add space between the boxes */
+    padding: 0 20px; /* Add 20px of padding to the left and right, (the first value is the top and bottom padding, and the second value is the left and right padding).  */
   }
   
-  .navbar-default .navbar-brand {
-    font-family: Verdana;
-    color: #ffffff;
-    font-size: 20px;
+  .box {
+    border: 2px solid #000; /* Box outline */
+    padding: 20px; /* Add padding inside the box */
+    width: calc(50% - 20px); /* Set box width to 50% of the container width with some spacing */
   }
   
-  .navbar-default .navbar-brand:hover,
-  .navbar-default .navbar-brand:focus {
-    color: #ffffff;
-    background-color: transparent;
+  .box h2 {
+    margin-top: 1px;
+    margin-bottom: 10px; /* Add margin below the title */
+    font-weight: 500;
   }
   
-  .navbar-default .navbar-nav > li > a {
-    color: #ffffff;
+  .box .content {
+    display: flex; /* Use flexbox for layout */
+    align-items: center; /* Align items vertically */
   }
   
-  .navbar-default .navbar-nav > li > a:hover,
-  .navbar-default .navbar-nav > li > a:focus {
-    color: #ffffff;
-    background-color: transparent;
+  .box .content img {
+    width: 100px; /* Adjust image width */
+    /* margin-top: 5px; */
+    float: left; /* Float the image to the left */
+    margin-right: 20px; /* Add margin to the right of the image */
+    margin-bottom: 20px; /* Add margin to the bottom of the image */
   }
   
-  .navbar-default .navbar-toggle {
-    border-color: transparent;
+  .box .content p {
+    margin: 0; /* Reset margin */
+    font-weight: normal;
+    text-align: justify;
   }
-  
-  .navbar-default .navbar-toggle:hover {
-    background-color: transparent;
-  }
-  
-  .navbar-default .navbar-toggle:focus {
-    background-color: transparent;
-  }
-  
-  .navbar-default .navbar-toggle .icon-bar {
-    background-color: #ffffff;
-  }
-  
+
   .carousel .background {
     background-position: center center;
     background-size: 100% 100%;

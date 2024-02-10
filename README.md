@@ -1,8 +1,8 @@
 # university-website
 To-do
-🔳 sign up, login page
-🔳 store credentials in php
-🔳 chatbot
-🔳 awards and achievements carousel
-🔳 connect navbar with page
-🔳 dropdown in navbar not working
+🔳 sign up, login page <br>
+🔳 store credentials in php <br>
+🔳 chatbot <br>
+🔳 awards and achievements carousel <br>
+🔳 connect navbar with page <br>
+☑️ dropdown in navbar not working <br>
