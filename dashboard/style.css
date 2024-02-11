@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap');
 
 :root{
-    --color-primary: #7380ec;
+    --color-primary: #549246;
     --color-danger: #ff7782;
     --color-success: #41f1b6;
     --color-warning: #ffbb55;
@@ -384,10 +384,6 @@ main .timetable.active .closeBtn{
     overflow: hidden;
 }
 .right .leaves .teacher:hover{box-shadow: none;}
-
-
-
-
 
 /* MEDIA QUERIES  */
 @media screen and (max-width: 1200px) {

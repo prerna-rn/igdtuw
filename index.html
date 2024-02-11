@@ -4,11 +4,16 @@
         <!-- this is v impt while importing from codepen.  -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
         <link rel="stylesheet" type="text/css" href="style.css">
-
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp">
+        
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-        <script src="app.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.4.5/swiper-bundle.min.js"></script>
+        
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Welcome To IGDTUW</title>
@@ -69,6 +74,10 @@
                 <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
                 </a>
+                <div class="theme-toggler">
+                  <span class="material-icons-sharp active">light_mode</span>
+                  <span class="material-icons-sharp">dark_mode</span>
+                </div>
             </div>
             </header>
             
@@ -123,9 +132,75 @@
               </div>
             </div>
           </div>
+          <main>
+            <div>
+              <span>discover</span>
+              <h1>Awards and Achievements</h1>
+              <hr>
+              <p></p>
+              <a href="#">download app</a>
+            </div>
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide swiper-slide--one">
+                  <div>
+                    <!-- <h2>Jellyfish</h2>
+                    <p>Jellyfish and sea jellies are the informal common names given to the medusa-phase of certain gelatinous members of the subphylum Medusozoa, a major part of the phylum Cnidaria.</p> -->
+                    <a href="#" target="_blank">explore</a>
+                  </div>
+                </div>
+                <div class="swiper-slide swiper-slide--two">
+                  <div>
+                    <!-- <h2>Seahorse</h2>
+                    <p>
+                      Seahorses are mainly found in shallow tropical and temperate salt water throughout the world. They live in sheltered areas such as seagrass beds, estuaries, coral reefs, and mangroves. Four species are found in Pacific waters from North America to South America.
+                    </p> -->
+                    <a href="#" target="_blank">explore</a>
+                  </div>
+                </div>
           
-            
-            
+                <div class="swiper-slide swiper-slide--three">
+          
+                  <div>
+                    <!-- <h2>octopus</h2>
+                    <p>
+                      Octopuses inhabit various regions of the ocean, including coral reefs, pelagic waters, and the seabed; some live in the intertidal zone and others at abyssal depths. Most species grow quickly, mature early, and are short-lived.
+                    </p> -->
+                    <a href="#" target="_blank">explore</a>
+                  </div>
+                </div>
+          
+                <div class="swiper-slide swiper-slide--four">
+          
+                  <div>
+                    <!-- <h2>Shark</h2>
+                    <p>
+                      Sharks are a group of elasmobranch fish characterized by a cartilaginous skeleton, five to seven gill slits on the sides of the head, and pectoral fins that are not fused to the head.
+                    </p> -->
+                    <a href="#" target="_blank">explore</a>
+                  </div>
+                </div>
+          
+                <div class="swiper-slide swiper-slide--five">
+          
+                  <div>
+                    <!-- <h2>Dolphin</h2>
+                    <p>
+                      Dolphins are widespread. Most species prefer the warm waters of the tropic zones, but some, such as the right whale dolphin, prefer colder climates. Dolphins feed largely on fish and squid, but a few, such as the orca, feed on large mammals such as seals.
+                    </p> -->
+                    <a href="#" target="_blank">explore</a>
+                  </div>
+                </div>
+              </div>
+              <!-- Add Pagination -->
+              <div class="swiper-pagination"></div>
+            </div>
+            <!-- <img src="https://cdn.pixabay.com/photo/2021/11/04/19/39/jellyfish-6769173_960_720.png" alt="" class="bg">
+            <img src="https://cdn.pixabay.com/photo/2012/04/13/13/57/scallop-32506_960_720.png" alt="" class="bg2"> -->
+          </main>
+            <!-- The error you're encountering, "Uncaught TypeError: themeToggler is null," suggests that the JavaScript code is trying to access the themeToggler element before it's available in the DOM. This could happen if the JavaScript code is executed before the HTML content is fully loaded. so add script b4 body closing tag -->
+          <script src="app.js"></script>
     </body>
+    
 </html>
 

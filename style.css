@@ -1,3 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root{
+  --color-primary: rgb(26, 105, 26);
+  --color-danger: #ff7782;
+  --color-success: #41f1b6;
+  --color-warning: #ffbb55;
+  --color-white: #fff;
+  --color-info: #7d8da1;
+  --color-dark: #363949;
+  --color-light: rgba(132, 139, 200, 0.18);
+  --color-dark-varient: #677483;
+  --color-background: #f6f6f9;
+  
+  --card-border-radius: 2rem;
+  --border-radius-1: 0.4rem;
+  --border-radius-2: 1.2rem;
+
+  --card-padding: 1.8rem;
+  --box-shadow: 0 2rem 3rem var(--color-light)    
+}
+
+
 button {
   background-color: #4CAF50; /* Change to your preferred color */
   color: white; /* Change to your preferred color */
@@ -17,7 +40,7 @@ button {
     z-index: 20;
     display: flex;
     justify-content: center;
-    background-color: rgb(26, 105, 26);
+    background-color: var(--color-primary);
     padding: 2px 140px 3px 70px;
     border-bottom: 1px solid rgb(219, 219, 219);
     top:0%;
@@ -82,7 +105,48 @@ button {
   .topnav .icon {
     display: none;
   }
+  /* theme toggler */
+  .topnav .theme-toggler{
+    background: var(--color-light);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3rem;
+    width: 5.2rem;
+    cursor: pointer;
+    border-radius: var(--border-radius-1);
+    margin-right: 2rem;
+    margin-left: auto;
+    /* padding: 0 1rem; Add padding for spacing     */
+  }
+
+  .topnav .theme-toggler span{
+    font-size: 1.2rem;
+    width: 3rem; /* Adjust width */
+    height: 2rem; /* Adjust height */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  .topnav .theme-toggler span.active{
+    background-color: var(--color-primary);
+    color: white;
+    border-radius: var(--border-radius-1);
+  }
   
+  .dark-theme{
+    --color-background: #181a1e;
+    --color-white: #202528;
+    --color-dark: #edeffd;
+    --color-dark-varient: #a3bdcc;
+    --color-light: rgba(0,0,0,0.4);
+    --box-shadow: 0 2rem 3rem var(--color-light)
+  }
+  /* Add transition for smooth sliding animation */
+/* Add transition for smooth sliding animation */
+/*  */
+
     /*--------------------------------------*/
   /* The dropdown container */
   /* In your CSS, you're targeting .dropdown:hover .dropdown-content, but you don't have a direct .dropdown class inside these buttons. Instead, you have a div with a class of .dropdown wrapping around the button and the dropdown content.
@@ -159,6 +223,7 @@ To fix this, you need to adjust your CSS selectors to target the correct element
       float: right;
       display: block;
     }
+    header .theme-toggler{margin: 0;}
   }
   
   /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
@@ -203,7 +268,7 @@ To fix this, you need to adjust your CSS selectors to target the correct element
   .container2 {
     text-align: center;
     margin-top: 20px; /* gives space bw container and carousel */
-    margin-bottom: 5px;
+    margin-bottom: 0;
     /* margin-left: 4px; */
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 900;
@@ -211,6 +276,7 @@ To fix this, you need to adjust your CSS selectors to target the correct element
     display: flex; /* Use flexbox to display boxes side by side */
     justify-content: space-between; /* Add space between the boxes */
     padding: 0 20px; /* Add 20px of padding to the left and right, (the first value is the top and bottom padding, and the second value is the left and right padding).  */
+    padding-bottom: 0; /* Remove the bottom padding */
   }
   .container2 p, ul{
     color: black;
@@ -384,3 +450,219 @@ To fix this, you need to adjust your CSS selectors to target the correct element
     color: #ffffff;
     outline: none;
   }
+
+  @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&family=Roboto:wght@300;400;500;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+
+main {
+  position: relative;
+  width: calc(min(90rem, 90%));
+  padding-top: 0;
+  margin: 0 auto;
+  margin-top: -10; 
+  min-height: 100vh;
+  column-gap: 3rem;
+  padding-block: min(20vh, 3rem);
+}
+
+.bg {
+  position: fixed;
+  top: -4rem;
+  left: -12rem;
+  z-index: -1;
+  opacity: 0;
+}
+
+.bg2 {
+  position: fixed;
+  bottom: -2rem;
+  right: -3rem;
+  z-index: -1;
+  width: 9.375rem;
+  opacity: 0;
+}
+
+main > div span {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 1rem;
+  color: #717171;
+}
+
+main > div h1 {
+  text-transform: capitalize;
+  letter-spacing: 0.8px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: clamp(3.4375rem, 3.25rem + 0.75vw, 4rem);
+  background-color: #005baa;
+  background-image: linear-gradient(45deg, #005baa, #000000);
+  background-size: 100%;
+  background-repeat: repeat;
+  background-clip: border-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+main > div hr {
+  display: block;
+  background: #005baa;
+  height: 0.25rem;
+  width: 6.25rem;
+  border: none;
+  margin: 1.125rem 0 1.875rem 0;
+}
+
+main > div p {
+  line-height: 1.6;
+}
+
+main a {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #717171;
+  font-weight: 500;
+  background: #fff;
+  border-radius: 3.125rem;
+  transition: 0.3s ease-in-out;
+}
+
+main > div > a {
+  border: 2px solid #c2c2c2;
+  margin-top: 2.188rem;
+  padding: 0.625rem 1.875rem;
+}
+
+main > div > a:hover {
+  border: 0.125rem solid #005baa;
+  color: #005baa;
+}
+
+.swiper {
+  width: 100%;
+  padding-top: 3.125rem;
+}
+
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
+  background: #fff;
+}
+
+.swiper-pagination {
+  bottom: 1.25rem !important;
+}
+
+.swiper-slide {
+  width: 65rem !important;
+  height: 45rem !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: self-start;
+}
+
+.swiper-slide h2 {
+  color: #fff;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  margin-bottom: 0.625rem;
+  padding: 0 0 0 1.563rem;
+  text-transform: uppercase;
+}
+
+.swiper-slide p {
+  color: #dadada;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  padding: 0 1.563rem;
+  line-height: 1.6;
+  font-size: 0.75rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.swiper-slide a {
+  margin: 1.25rem 1.563rem 3.438rem 1.563rem;
+  padding: 0.438em 1.875rem;
+  font-size: 0.9rem;
+}
+
+.swiper-slide a:hover {
+  color: #005baa;
+}
+
+.swiper-slide div {
+  display: none;
+  opacity: 0;
+  padding-bottom: 0.625rem;
+}
+
+.swiper-slide-active div {
+  display: block;
+  opacity: 1;
+}
+
+.swiper-slide--one {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("/assets/awards/a3.jpg")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--two {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("/assets/awards/ficci.png")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--three {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("/assets/awards/nptel2024.jpg")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--four {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("/assets/awards/ssa-min.jpg")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-slide--five {
+  background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
+    url("/assets/awards/wuri2022.png")
+      no-repeat 50% 50% / cover;
+}
+
+.swiper-3d .swiper-slide-shadow-left,
+.swiper-3d .swiper-slide-shadow-right {
+  background-image: none;
+}
+
+@media screen and (min-width: 48rem) {
+  main {
+    display: flex;
+    align-items: center;
+  }
+  .bg,
+  .bg2 {
+    opacity: 0.1;
+  }
+}
+
+@media screen and (min-width: 93.75rem) {
+  .swiper {
+    width: 85%;
+  }
+}
