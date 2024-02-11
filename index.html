@@ -200,6 +200,18 @@
           </main>
             <!-- The error you're encountering, "Uncaught TypeError: themeToggler is null," suggests that the JavaScript code is trying to access the themeToggler element before it's available in the DOM. This could happen if the JavaScript code is executed before the HTML content is fully loaded. so add script b4 body closing tag -->
           <script src="app.js"></script>
+          <script>
+            window.embeddedChatbotConfig = {
+            chatbotId: "UYe9lJiGaPlz8cqQSWy4e",
+            domain: "www.chatbase.co"
+            }
+            </script>
+            <script
+            src="https://www.chatbase.co/embed.min.js"
+            chatbotId="UYe9lJiGaPlz8cqQSWy4e"
+            domain="www.chatbase.co"
+            defer>
+            </script>
     </body>
     
 </html>
