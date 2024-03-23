@@ -1,5 +1,6 @@
 # university-website
 To-do <br>
+🔳 add footer
 ☑️ sign up, login page <br>
 ☑️ store form credentials in php mysql server <br>
 ☑️ after successful login, connect to the erp dashboard <br>
@@ -28,3 +29,4 @@ https://www.youtube.com/watch?v=2JvaoEhgbgE <br>
 4. for login/sign up <br> 
 5. for awards and achievements section <br> 
 6. for dashboard <br> 
+7. navbar <br>

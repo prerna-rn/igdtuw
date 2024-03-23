@@ -20,7 +20,10 @@
   --box-shadow: 0 2rem 3rem var(--color-light)    
 }
 
-
+footer {
+  background-color: rgb(53, 173, 53); /* Change this to the specific shade of green you want */
+  width: 100%;
+}
 button {
   background-color: #4CAF50; /* Change to your preferred color */
   color: white; /* Change to your preferred color */
