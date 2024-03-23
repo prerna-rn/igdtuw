@@ -617,31 +617,31 @@ main > div > a:hover {
 
 .swiper-slide--one {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("/assets/awards/a3.jpg")
+    url("./assets/awards/a3.jpg")
       no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--two {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("/assets/awards/ficci.png")
+    url("./assets/awards/ficci.png")
       no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--three {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("/assets/awards/nptel2024.jpg")
+    url("./assets/awards/nptel2024.jpg")
       no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--four {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("/assets/awards/ssa-min.jpg")
+    url("./assets/awards/ssa-min.jpg")
       no-repeat 50% 50% / cover;
 }
 
 .swiper-slide--five {
   background: linear-gradient(to top, #0f2027, #203a4300, #2c536400),
-    url("/assets/awards/wuri2022.png")
+    url("./assets/awards/wuri2022.png")
       no-repeat 50% 50% / cover;
 }
 

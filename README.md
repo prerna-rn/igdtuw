@@ -1,17 +1,17 @@
 # university-website
 To-do <br>
 ☑️ sign up, login page <br>
-🔳 store credentials in php <br>
+☑️ store form credentials in php mysql server <br>
 ☑️ after successful login, connect to the erp dashboard <br>
 🔳 after successful new sign up, connect to the erp dashboard without disturbing slider, (carefully, similar to how i dealt with login)<br>
 ☑️ validate login data using js or? <br>
-🔳 page loader after successful login <br>
 ☑️ chatbot <br>
 ☑️ awards and achievements carousel <br>
 ☑️ add light dark toggler <br>
+☑️ dropdown in navbar not working <br>
 🔳 add light, dark mode colors on main page<br>
 🔳 connect navbar with page <br>
-☑️ dropdown in navbar not working <br>
+🔳 page loader after successful login <br>
 🔳 add hr in notices <br>
 
 
@@ -19,9 +19,7 @@ To-do <br>
 resources followed <br> 
 1. for php form <br> 
 https://www.youtube.com/watch?v=88toL4gd_fQ <br>
-download xampp for apache
-https://www.phpmyadmin.net/try/ <br>
-https://demo.phpmyadmin.net/master-config/public/ <br>
+download xampp for apache <br>
 https://github.com/Tariqu/database_connection_php <br>
 https://www.youtube.com/watch?v=2HVKizgcfjo <br> 
 https://www.youtube.com/watch?v=2JvaoEhgbgE <br> 
