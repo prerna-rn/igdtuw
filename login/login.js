@@ -18,7 +18,7 @@ logInButton.addEventListener('click', function(event) {
 	container.classList.remove("right-panel-active");
 	if(window.validationPassed) {
 		// Redirect to the dashboard
-		window.location.href = "/dashboard/index.html";
+		window.location.href = "../dashboard/index.html";
 
 	}
 });
