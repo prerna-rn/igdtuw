@@ -17,7 +17,7 @@
 		$stmt->bind_param("sssssi", $firstName, $lastName, $gender, $email, $password, $number);
 		$execval = $stmt->execute();
 		echo $execval;
-		echo "Registration successfully...";
+		echo "Registration successful...";
 		$stmt->close();
 		$conn->close();
 	}
