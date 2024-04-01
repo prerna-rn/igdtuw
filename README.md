@@ -1,6 +1,6 @@
 # university-website
 To-do <br>
-☑️ add footer
+☑️ add footer <br>
 ☑️ sign up, login page <br>
 ☑️ store form credentials in php mysql server <br>
 ☑️ after successful login, connect to the erp dashboard <br>
